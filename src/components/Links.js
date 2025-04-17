@@ -1,21 +1,22 @@
 
+
 import React from "react";
 
-function Links(props) {
+function Links({ github, linkedin }) {
   return (
     <div>
       <h3>Links</h3>
-      {props.github && (
+      {github && (
         <p>
-          <a href={props.github} target="_blank">
-            {props.github}
+          <a href={github} target="_blank" rel="noreferrer">
+            {github}
           </a>
         </p>
       )}
-      {props.linkedin && (
+      {linkedin && (
         <p>
-          <a href={props.linkedin} target="_blank">
-            {props.linkedin}
+          <a href={linkedin} target="_blank" rel="noreferrer">
+            {linkedin}
           </a>
         </p>
       )}
