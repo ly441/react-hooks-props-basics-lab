@@ -1,11 +1,24 @@
+
 import React from "react";
 
 function Links(props) {
   return (
     <div>
       <h3>Links</h3>
-      <a href={props.github}>{props.github}</a>
-      <a href={props.linkedin}>{props.linkedin}</a>
+      {props.github && (
+        <p>
+          <a href={props.github} target="_blank">
+            {props.github}
+          </a>
+        </p>
+      )}
+      {props.linkedin && (
+        <p>
+          <a href={props.linkedin} target="_blank">
+            {props.linkedin}
+          </a>
+        </p>
+      )}
     </div>
   );
 }
